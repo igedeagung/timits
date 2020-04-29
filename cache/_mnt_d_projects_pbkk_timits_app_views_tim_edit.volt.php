@@ -28,14 +28,14 @@
     </div>
 
     <div class="row">
-    <div class="form-group col-md-8">
+    <div class="form-group col-md-6">
         <label for="kontak">Nomor Telepon</label>
         <?= $this->tag->telField(['kontak', 'class' => 'form-control', 'placeholder' => 'Masukkan Nomor Telepon yang bisa dihubungi', 'value' => $tims->kontak]) ?>
     </div>
 
-    <div class="form-group col-md-4">
+    <div class="form-group col-md-6">
         <label for="jumlah">Jumlah anggota yang dibutuhkan</label>
-        <?= $this->tag->numericField(['jumlah', 'class' => 'form-control', 'placeholder' => 'Masukkan jumlah anggota yang dibutuhkan', 'min' => '1', 'value' => $tims->jumlahkurang]) ?>
+        <?= $this->tag->numericField(['jumlah', 'class' => 'form-control', 'placeholder' => 'Masukkan jumlah anggota yang dibutuhkan', 'value' => $tims->jumlahkurang]) ?>
     </div>
     </div>
 

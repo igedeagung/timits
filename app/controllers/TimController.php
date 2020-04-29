@@ -288,49 +288,43 @@ class TimController extends ControllerBase
                 if ($namatim === "") {
                     $this->flashSession->error("Nama Tim anda kosong");
                     //pick up the same view to display the flash session errors
-                    return $this->view->pick("tim/create");
+                    return $this->response->redirect("tim/edit/".$id);
                 }
 
                 if ($kategori === "") {
                     $this->flashSession->error("kategori anda kosong");
                     //pick up the same view to display the flash session errors
-                    return $this->view->pick("tim/create");
+                    return $this->response->redirect("tim/edit/".$id);
                 }
 
                 if ($namalomba === "") {
                     $this->flashSession->error("Nama Lomba anda kosong");
                     //pick up the same view to display the flash session errors
-                    return $this->view->pick("tim/create");
+                    return $this->response->redirect("tim/edit/".$id);
                 }
 
                 if ($kontak === "") {
                     $this->flashSession->error("Nomor Telepon anda kosong");
                     //pick up the same view to display the flash session errors
-                    return $this->view->pick("tim/create");
+                    return $this->response->redirect("tim/edit/".$id);
                 }
 
                 if ($jumlah === "") {
                     $this->flashSession->error("Jumlah yang dibutuhkan anda kosong");
                     //pick up the same view to display the flash session errors
-                    return $this->view->pick("tim/create");
+                    return $this->response->redirect("tim/edit/".$id);
                 }
 
                 if ($deskripsi === "") {
                     $this->flashSession->error("Deskripsi anda kosong");
                     //pick up the same view to display the flash session errors
-                    return $this->view->pick("tim/create");
+                    return $this->response->redirect("tim/edit/".$id);
                 }
 
                 if (strlen($kontak) < 9) {
                     $this->flashSession->error("Nomor Telepon anda tidak valid");
                     //pick up the same view to display the flash session errors
-                    return $this->view->pick("tim/create");
-                }
-
-                if ($jumlah < 1) {
-                    $this->flashSession->error("Jumlah yang dibutuhkan tidak valid");
-                    //pick up the same view to display the flash session errors
-                    return $this->view->pick("tim/create");
+                    return $this->response->redirect("tim/edit/".$id);
                 }
 
                 //assign value from the form to $team

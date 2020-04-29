@@ -1,10 +1,11 @@
-{% extends 'templates/base.volt' %}
 
-{% block title %}Index{% endblock %}
+<title>Index - TIMITS</title>
 
-{% block head %}<style type='text/css'>.important { color: #336699; }</style>{% endblock %}
-
-{% block content %}
+<div class='content'>
+    <div style="margin-top: 10px; margin-bottom: 10px;">
+        <?= $this->flashSession->output() ?>
+    </div>
+    
     <div class="jumbotron">
         <h1 align="center">Selamat Datang di TIMITS</h1>
         <p align="center">TIMITS adalah situs untuk mencari tim bila anda kekurangan anggota atau sedang mencari tim</p>
@@ -25,4 +26,5 @@
         </div>
     </div>
 
-{% endblock %}
+
+</div>
