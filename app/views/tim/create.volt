@@ -7,6 +7,7 @@
 {% block content %}
 
 <h2>Buat Tim</h2>
+<hr>
 <div class="container">
 {{ form('tim/createSubmit', 'method': 'post') }}
     

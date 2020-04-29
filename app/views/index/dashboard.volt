@@ -5,10 +5,19 @@
 {% block head %}<style type='text/css'>.important { color: #336699; }</style>{% endblock %}
 
 {% block content %}
-    <h1>Dashboard</h1>
-    <p>{{ 'Hai '~session.get('AUTH_NAME') }}</p>
+    <h2>Dashboard</h2>
+    <hr>
+    <h4>{{ 'Hai '~session.get('AUTH_NAME') }}</h4>
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+            <p>Tim anda: </p>
+        </div>
+        <div class="col-sm-6" align="right">
+            <a href="/tim/create" class="btn btn-primary"> Tambah Tim </a>
+        </div>
+    </div>
     {% if teams|length %}
-        <p>Tim anda</p>
         <div style="overflow-x:auto">
         <table class="table table-hover">
             <thead>
@@ -43,9 +52,13 @@
     {% else %}
         <p>Tim anda Kosong</p>
     {% endif %}
-    <a href="/tim/create" class="btn btn-primary"> Tambah Tim </a>
+  <br>  
+<div class="row">
+    <div class="col-sm-6">
+        <p>Tim bergabung anda: </p>
+    </div>
+</div>
     {% if joins|length %}
-        <p>Tim yang anda gabung</p>
         <div style="overflow-x:auto">
         <table class="table table-hover">
             <thead>

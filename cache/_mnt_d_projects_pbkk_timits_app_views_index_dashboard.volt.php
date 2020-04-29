@@ -6,10 +6,19 @@
         <?= $this->flashSession->output() ?>
     </div>
     
-    <h1>Dashboard</h1>
-    <p><?= 'Hai ' . $this->session->get('AUTH_NAME') ?></p>
+    <h2>Dashboard</h2>
+    <hr>
+    <h4><?= 'Hai ' . $this->session->get('AUTH_NAME') ?></h4>
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+            <p>Tim anda: </p>
+        </div>
+        <div class="col-sm-6" align="right">
+            <a href="/tim/create" class="btn btn-primary"> Tambah Tim </a>
+        </div>
+    </div>
     <?php if ($this->length($teams)) { ?>
-        <p>Tim anda</p>
         <div style="overflow-x:auto">
         <table class="table table-hover">
             <thead>
@@ -44,9 +53,13 @@
     <?php } else { ?>
         <p>Tim anda Kosong</p>
     <?php } ?>
-    <a href="/tim/create" class="btn btn-primary"> Tambah Tim </a>
+  <br>  
+<div class="row">
+    <div class="col-sm-6">
+        <p>Tim bergabung anda: </p>
+    </div>
+</div>
     <?php if ($this->length($joins)) { ?>
-        <p>Tim yang anda gabung</p>
         <div style="overflow-x:auto">
         <table class="table table-hover">
             <thead>
@@ -86,13 +99,3 @@
     <?php } ?>
 
 </div>
-<footer class='footer' style="position:absolute;">
-    <div class="container">
-        <span>
-            
-                &copy; Copyright 2020-present. 
-                All rights reserved.
-            
-        </span>
-    </div>
-</footer>

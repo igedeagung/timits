@@ -6,7 +6,8 @@
         <?= $this->flashSession->output() ?>
     </div>
     
-    <h1>List Tim</h1>
+    <h2>List Tim</h2>
+    <hr>
     <div style="overflow-x:auto">
     <?php if ($this->length($teams)) { ?>
         <table class="table table-hover">
@@ -49,13 +50,3 @@
     <?php } ?>
 
 </div>
-<footer class='footer' style="position:absolute;">
-    <div class="container">
-        <span>
-            
-                &copy; Copyright 2020-present. 
-                All rights reserved.
-            
-        </span>
-    </div>
-</footer>

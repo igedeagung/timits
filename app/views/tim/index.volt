@@ -5,7 +5,8 @@
 {% block head %}<style type='text/css'>.important { color: #336699; }</style>{% endblock %}
 
 {% block content %}
-    <h1>List Tim</h1>
+    <h2>List Tim</h2>
+    <hr>
     <div style="overflow-x:auto">
     {% if teams|length %}
         <table class="table table-hover">

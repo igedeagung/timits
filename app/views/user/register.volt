@@ -7,6 +7,8 @@
 {% block content %}
 
 <h2>Daftar</h2>
+<hr>
+<div class="w-50 mx-auto">
 {{ form('user/registerSubmit', 'method': 'post') }}
     
     <div class="form-group">
@@ -39,5 +41,6 @@
     </div>
 
 {{ end_form() }}
+</div>
 
 {% endblock %}

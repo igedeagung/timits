@@ -7,6 +7,7 @@
 {% block content %}
 
 <h2>Edit Tim</h2>
+<hr>
 <div class="container" width="10px">
 {{ form('tim/editSubmit/'~tims.team_id, 'method': 'post') }}
     

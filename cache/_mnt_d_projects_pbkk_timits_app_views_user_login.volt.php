@@ -7,6 +7,8 @@
     </div>
     
     <h2>Masuk</h2>
+    <hr>
+    <div class="w-50 mx-auto">
     <?= $this->tag->form(['user/loginSubmit', 'method' => 'post']) ?>
 
     <div class="form-group">
@@ -27,15 +29,7 @@
     <p>Belum punya akun ?
         <?= $this->tag->linkTo(['user/register', 'Daftar Sekarang']) ?>
     </p>
+    </div>
+    
 
 </div>
-<footer class='footer' style="position:absolute;">
-    <div class="container">
-        <span>
-            
-                &copy; Copyright 2020-present. 
-                All rights reserved.
-            
-        </span>
-    </div>
-</footer>

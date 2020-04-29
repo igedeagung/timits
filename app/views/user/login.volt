@@ -6,6 +6,8 @@
 
 {% block content %}
     <h2>Masuk</h2>
+    <hr>
+    <div class="w-50 mx-auto">
     {{ form('user/loginSubmit', 'method': 'post') }}
 
     <div class="form-group">
@@ -26,4 +28,6 @@
     <p>Belum punya akun ?
         {{ link_to('user/register', 'Daftar Sekarang') }}
     </p>
+    </div>
+    
 {% endblock %}

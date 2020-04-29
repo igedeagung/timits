@@ -8,6 +8,8 @@
     
 
 <h2>Daftar</h2>
+<hr>
+<div class="w-50 mx-auto">
 <?= $this->tag->form(['user/registerSubmit', 'method' => 'post']) ?>
     
     <div class="form-group">
@@ -40,16 +42,7 @@
     </div>
 
 <?= $this->tag->endForm() ?>
+</div>
 
 
 </div>
-<footer class='footer' style="position:absolute;">
-    <div class="container">
-        <span>
-            
-                &copy; Copyright 2020-present. 
-                All rights reserved.
-            
-        </span>
-    </div>
-</footer>

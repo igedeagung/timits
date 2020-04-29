@@ -8,6 +8,7 @@
     
 
 <h2>Edit Tim</h2>
+<hr>
 <div class="container" width="10px">
 <?= $this->tag->form(['tim/editSubmit/' . $tims->team_id, 'method' => 'post']) ?>
     
@@ -52,13 +53,3 @@
 
 
 </div>
-<footer class='footer' style="position:absolute;">
-    <div class="container">
-        <span>
-            
-                &copy; Copyright 2020-present. 
-                All rights reserved.
-            
-        </span>
-    </div>
-</footer>
